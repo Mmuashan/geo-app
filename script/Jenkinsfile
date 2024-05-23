@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+
+    stages{
+        stage("marven"){
+            steps{
+            sh 'mvnclean validate compile install test package'
+            }
+        }
+    }
+}
