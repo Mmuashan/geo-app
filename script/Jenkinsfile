@@ -9,7 +9,6 @@ pipeline{
            withSonarQubeEnv('sonarQube'){
              sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Mmuashan_geo-app'
            }  
-           
         }
       }   
      stage("maven"){
